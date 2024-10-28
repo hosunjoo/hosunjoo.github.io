@@ -24,7 +24,8 @@ body {
 }
 
 .sidebar h2 {
-    margin-top: 100px;
+    margin-top: 0;
+    margin-bottom: 100px; /* 첫 줄과 그 아래 줄 사이의 여백 */
 }
 
 .sidebar .nav-links {
