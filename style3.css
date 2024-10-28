@@ -11,13 +11,13 @@ body {
 .container {
     display: flex;
     height: 100vh; /* 전체 화면 높이를 채우기 */
-    padding: 0 80px; /* 좌우에 200px 여백 추가 */
+    padding: 0 100px; /* 좌우에 200px 여백 추가 */
 }
 
 /* 사이드바 스타일 */
 .sidebar {
-    background: #333;
-    color: #fff;
+    background: #f4f4f4;
+    color: #333;
     width: 25%; /* 사이드바의 너비 */
     padding: 20px;
     box-sizing: border-box;
