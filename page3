@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좌우 분할 레이아웃</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>메뉴</h2>
+            <ul class="nav-links">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">아티클</a></li>
+                <li><a href="#">디자인</a></li>
+                <li><a href="#">연락처</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <h1>게시글</h1>
+            <section class="posts">
+                <article class="post">
+                    <h2>게시글 제목 1</h2>
+                    <p>게시글 내용이 여기에 표시됩니다.</p>
+                </article>
+                <article class="post">
+                    <h2>게시글 제목 2</h2>
+                    <p>게시글 내용이 여기에 표시됩니다.</p>
+                </article>
+                <article class="post">
+                    <h2>게시글 제목 3</h2>
+                    <p>게시글 내용이 여기에 표시됩니다.</p>
+                </article>
+                <!-- 추가 게시글 -->
+            </section>
+        </main>
+    </div>
+</body>
+</html>
