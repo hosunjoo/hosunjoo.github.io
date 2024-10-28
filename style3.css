@@ -11,6 +11,7 @@ body {
 .container {
     display: flex;
     height: 100vh; /* 전체 화면 높이를 채우기 */
+    padding: 0 20px; /* 좌우에 20px 여백 추가 */
 }
 
 /* 사이드바 스타일 */
