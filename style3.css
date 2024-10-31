@@ -19,7 +19,7 @@ body {
     background: #f4f4f4;
     color: #333;
     width: 25%; /* 사이드바의 너비 */
-    padding: 9px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -37,16 +37,17 @@ body {
     margin: 9px 0;
 }
 
-.nav-links li a {
-  color: #333;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  border-bottom: 2px solid transparent; /* 밑줄을 기본적으로 투명하게 */
+.sidebar .nav-links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s, padding 0.3s;
+    border-bottom: 2px solid transparent; /* 기본 밑줄을 투명하게 설정 */
 }
 
-.nav-links li a.active {
-  border-bottom: 2px solid #333; /* 하이라이트된 링크에 검은색 밑줄 */
+.sidebar .nav-links li a:hover,
+.sidebar .nav-links li a:active {
+    border-bottom: 2px solid #333; /* Hover 또는 Active 시 밑줄 색상 추가 */
 }
 
 /* 메인 콘텐츠 스타일 */
