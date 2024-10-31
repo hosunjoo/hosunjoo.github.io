@@ -38,9 +38,16 @@ body {
 }
 
 .sidebar .nav-links li a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
+    transition: background 0.3s, padding 0.3s;
+    border-bottom: 2px solid transparent; /* 기본 밑줄을 투명하게 설정 */
+}
+
+.sidebar .nav-links li a:hover,
+.sidebar .nav-links li a:active {
+    border-bottom: 2px solid #fff; /* Hover 또는 Active 시 밑줄 색상 추가 */
 }
 
 /* 메인 콘텐츠 스타일 */
