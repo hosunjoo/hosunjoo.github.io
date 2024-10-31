@@ -46,12 +46,15 @@ body {
     border-bottom: 2px solid transparent; /* 기본 밑줄을 투명하게 설정 */
 }
 
+
 .sidebar .nav-links li a:hover,{
     transform: scale(1.1, 1.1);
 }
-.sidebar .nav-links li a:active {
-     font-size: 1rem;
-     text-decoration: underline;
+
+.sidebar .nav-links li a.active {
+    font-weight: bold; /* 강조 효과 */
+    border-bottom: 2px solid #333; /* 클릭한 항목의 밑줄 */
+    color: #333; /* 색상 변경 */
 }
 
 /* 메인 콘텐츠 스타일 */
