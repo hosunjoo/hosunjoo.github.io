@@ -8,9 +8,9 @@ body {
 }
 
 .site-name{
-     padding: 0 100px; /* 좌우에 200px 여백 추가 */
      font-size: 24px;    /* 글자 크기 설정 */
      font-weight: 600;
+     padding: 0 120px; /* 좌우에 200px 여백 추가 */
 }
 
 /* 컨테이너 레이아웃 */
