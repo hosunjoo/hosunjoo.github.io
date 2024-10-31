@@ -38,7 +38,7 @@ body {
 }
 
 .sidebar .nav-links li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-size: 18px;
     transition: background 0.3s, padding 0.3s;
@@ -47,7 +47,7 @@ body {
 
 .sidebar .nav-links li a:hover,
 .sidebar .nav-links li a:active {
-    border-bottom: 2px solid #fff; /* Hover 또는 Active 시 밑줄 색상 추가 */
+    border-bottom: 2px solid #333; /* Hover 또는 Active 시 밑줄 색상 추가 */
 }
 
 /* 메인 콘텐츠 스타일 */
