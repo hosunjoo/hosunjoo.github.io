@@ -1,16 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll('.sidebar .nav-links li a');
 
-    // 현재 페이지의 파일 이름 가져오기
-    const currentPage = window.location.pathname.split("/").pop();
+    // 현재 페이지의 전체 URL 가져오기
+    const currentUrl = window.location.href;
 
     navLinks.forEach(link => {
-        // href 속성이 현재 페이지와 같으면 active 클래스 추가
-        if (link.getAttribute('href') === currentPage) {
+        // 링크의 절대 URL을 생성하여 현재 URL과 비교
+        const linkUrl = link.href;
+
+        if (currentUrl === linkUrl) {
             link.classList.add('active');
         }
 
-        // 메뉴 항목 클릭 시 다른 항목의 active 클래스 제거
+        // 클릭 시 다른 항목의 active 클래스 제거
         link.addEventListener('click', function() {
             navLinks.forEach(item => item.classList.remove('active'));
             this.classList.add('active');
