@@ -12,11 +12,13 @@ body {
      height: 100vh; /* 전체 화면 높이를 채우기 */
      padding: 0 100px; /* 좌우에 200px 여백 추가 */
 }
+
 /* 컨테이너 레이아웃 */
 .container {
     display: flex;
     height: 100vh; /* 전체 화면 높이를 채우기 */
     padding: 0 100px; /* 좌우에 200px 여백 추가 */
+    padding-top: 100px;
 }
 
 /* 사이드바 스타일 */
