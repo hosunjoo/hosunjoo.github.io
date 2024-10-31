@@ -13,6 +13,27 @@ body {
      padding: 0 120px; /* 좌우에 200px 여백 추가 */
 }
 
+.site-name a {
+    text-decoration: none;
+    color: black;
+}
+
+.site-name a:visited {
+    text-decoration: none;
+}
+
+.site-name a:hover {
+    text-decoration: none;
+}
+
+.site-name a:focus {
+    text-decoration: none;
+}
+
+.site-name a:hover, .site-name a:active {
+    text-decoration: none;
+}
+
 /* 컨테이너 레이아웃 */
 .container {
     display: flex;
