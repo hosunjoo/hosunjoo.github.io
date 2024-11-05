@@ -130,19 +130,18 @@ body {
     }
 }
 
-/* 768px 이하 화면에서는 1열 레이아웃으로 변경 */
-@media (max-width: 768px) {
+/* 가로가 세로보다 짧아질 때(즉, 세로가 더 긴 경우) 1열로 변경 */
+@media (max-aspect-ratio: 1/1) {
+    .posts {
+        grid-template-columns: 1fr; /* 1열 그리드 */
+    }
+
     .container {
-        padding: 0 20px; /* 모바일 여백 */
-        flex-direction: column; /* 모바일에서는 열 방향 정렬 */
+        flex-direction: column; /* 상하로 정렬 */
     }
 
     .sidebar {
-        width: 100%;
+        width: 100%; /* 사이드바도 전체 너비로 */
         margin-bottom: 20px;
-    }
-
-    .posts {
-        grid-template-columns: 1fr; /* 1열 그리드 */
     }
 }
