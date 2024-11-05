@@ -104,12 +104,12 @@ body {
 /* 1720px 이하 화면에서는 여백과 레이아웃 조정 */
 @media (max-width: 1720px) {
     .container {
-        padding: 0 80px; /* 좌우 여백 축소 */
+        padding: 0 0px; /* 좌우 여백 축소 */
     }
 
     .site-name {
         padding: 0 0px;
-        font-size: 22px; /* 글자 크기 조정 */
+        font-size: 24px; /* 글자 크기 조정 */
     }
 }
 
