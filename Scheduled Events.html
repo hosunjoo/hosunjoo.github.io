@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scheduled Events</title>
+    <title>Main Conveyor Page</title>
     <style>
-        /* 전체 화면 설정 */
         body {
             display: flex;
             justify-content: center;
@@ -14,68 +13,27 @@
             margin: 0;
             font-size: 16px;
         }
-        
-        /* 화면 크기 제한 */
+
         .container-wrapper {
             width: 1720px;
             display: flex;
-            gap: 20px;
+            gap: 70px; /* 컨테이너 사이 여백을 70px로 설정 */
         }
-        
-        /* 각 컨테이너 기본 스타일 */
-        .container {
-            flex: 1; /* 균등 분배 */
-            height: 400px;
-            overflow: hidden;
-            border: 1px solid #ccc;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        /* 각 컨테이너 내의 행 스타일 */
-        .row {
+
+        /* iframe 크기 조정 */
+        .container-frame {
             flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 1px solid #eee;
+            height: 400px;
+            border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
     <div class="container-wrapper">
-        <div class="container" id="daily">
-            <!-- 20개의 행 추가 -->
-            <div class="row">Daily 1</div>
-            <div class="row">Daily 2</div>
-            <div class="row">Daily 3</div>
-            <!-- 행 4~19 생략 -->
-            <div class="row">Daily 20</div>
-        </div>
-
-        <div class="container" id="weekly">
-            <!-- 20개의 행 추가 -->
-            <div class="row">Weekly 1</div>
-            <div class="row">Weekly 2</div>
-            <!-- 행 3~19 생략 -->
-            <div class="row">Weekly 20</div>
-        </div>
-
-        <div class="container" id="monthly">
-            <!-- 20개의 행 추가 -->
-            <div class="row">Monthly 1</div>
-            <div class="row">Monthly 2</div>
-            <!-- 행 3~19 생략 -->
-            <div class="row">Monthly 20</div>
-        </div>
-
-        <div class="container" id="yearly">
-            <!-- 20개의 행 추가 -->
-            <div class="row">Yearly 1</div>
-            <div class="row">Yearly 2</div>
-            <!-- 행 3~19 생략 -->
-            <div class="row">Yearly 20</div>
-        </div>
+        <iframe class="container-frame" src="Daily.html"></iframe>
+        <iframe class="container-frame" src="Weekly.html"></iframe>
+        <iframe class="container-frame" src="Monthly.html"></iframe>
+        <iframe class="container-frame" src="Yearly.html"></iframe>
     </div>
 </body>
 </html>
