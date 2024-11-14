@@ -15,15 +15,16 @@
             font-size: 16px;
         }
         
-        /* 컨베이어 벨트 래퍼 설정 */
-        .conveyor-wrapper {
+        /* 화면 크기 제한 */
+        .container-wrapper {
+            width: 1720px;
             display: flex;
             gap: 20px;
         }
         
         /* 각 컨테이너 기본 스타일 */
         .container {
-            width: 100px;
+            flex: 1; /* 균등 분배 */
             height: 400px;
             overflow: hidden;
             border: 1px solid #ccc;
@@ -42,7 +43,7 @@
     </style>
 </head>
 <body>
-    <div class="conveyor-wrapper">
+    <div class="container-wrapper">
         <div class="container" id="daily">
             <!-- 20개의 행 추가 -->
             <div class="row">Daily 1</div>
