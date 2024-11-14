@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scheduled Events</title>
-  <style>
-    /* Body 스타일 */
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #FFDAB9; /* 파스텔톤 살구색 */
-    }
-
-    /* 컨테이너 스타일 */
-    .dot-container {
-      position: absolute;
-      bottom: 20px;
-      display: flex;
-      gap: 20px; /* 점 사이의 간격 */
-    }
-
-    /* 기본 점 스타일 */
-    .dot {
-      width: 20px;
-      height: 20px;
-      background-color: #333;
-      border-radius: 50%;
-      position: relative;
-      cursor: pointer;
-    }
-
-    /* 클릭 시 나타나는 내부 점 */
-    .dot.clicked::after {
-      content: '';
-      width: 8px;
-      height: 8px;
-      background-color: #fff;
-      border-radius: 50%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conveyor Belt Containers</title>
+    <style>
+        /* 전체 화면 설정 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-size: 16px;
+        }
+        
+        /* 컨베이어 벨트 래퍼 설정 */
+        .conveyor-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+        
+        /* 각 컨테이너 기본 스타일 */
+        .container {
+            width: 100px;
+            height: 400px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* 각 컨테이너 내의 행 스타일 */
+        .row {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
 </head>
 <body>
-  <!-- 클릭 가능한 점들을 담는 컨테이너 -->
-  <div class="dot-container">
-    <a href="page4.html" onclick="handleClick(this)">
-      <div class="dot"></div>
-    </a>
-    <a href="test.html" onclick="handleClick(this)">
-      <div class="dot"></div>
-    </a>
-    <a href="index.html" onclick="handleClick(this)">
-      <div class="dot"></div>
-    </a>
-  </div>
+    <div class="conveyor-wrapper">
+        <div class="container" id="daily">
+            <!-- 20개의 행 추가 -->
+            <div class="row">Daily 1</div>
+            <div class="row">Daily 2</div>
+            <div class="row">Daily 3</div>
+            <!-- 행 4~19 생략 -->
+            <div class="row">Daily 20</div>
+        </div>
 
-  <script>
-    // 점 클릭 시 내부 흰색 점 표시를 위한 함수
-    function handleClick(dot) {
-      dot.classList.toggle('clicked');
-    }
-  </script>
+        <div class="container" id="weekly">
+            <!-- 20개의 행 추가 -->
+            <div class="row">Weekly 1</div>
+            <div class="row">Weekly 2</div>
+            <!-- 행 3~19 생략 -->
+            <div class="row">Weekly 20</div>
+        </div>
+
+        <div class="container" id="monthly">
+            <!-- 20개의 행 추가 -->
+            <div class="row">Monthly 1</div>
+            <div class="row">Monthly 2</div>
+            <!-- 행 3~19 생략 -->
+            <div class="row">Monthly 20</div>
+        </div>
+
+        <div class="container" id="yearly">
+            <!-- 20개의 행 추가 -->
+            <div class="row">Yearly 1</div>
+            <div class="row">Yearly 2</div>
+            <!-- 행 3~19 생략 -->
+            <div class="row">Yearly 20</div>
+        </div>
+    </div>
 </body>
 </html>
