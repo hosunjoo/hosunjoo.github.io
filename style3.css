@@ -74,6 +74,7 @@ body {
 
 /* 메인 콘텐츠 스타일 */
 .content {
+    top: 0px
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
