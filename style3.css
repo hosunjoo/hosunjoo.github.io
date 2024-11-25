@@ -77,7 +77,7 @@ body {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: hidden
+    overflow-y: auto;
 }
 
 /* 게시글 스타일 (2열 그리드 설정) */
@@ -101,6 +101,7 @@ body {
 .post p {
     height: 180px;
     margin-bottom: 0;
+    overflow: hidden;
 }
 
 /* 1720px 이하 화면에서는 여백과 레이아웃 조정 */
