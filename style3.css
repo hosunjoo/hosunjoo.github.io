@@ -88,7 +88,6 @@ body {
 }
 
 .post {
-    height: 250px;
     background: #fff;
     padding: 15px;
     border-radius: 10px;
@@ -100,6 +99,7 @@ body {
 }
 
 .post p {
+    height: 180px;
     margin-bottom: 0;
 }
 
