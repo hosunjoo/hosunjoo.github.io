@@ -32,7 +32,6 @@ body {
     display: flex;
     height: 100vh; /* 전체 화면 높이를 채우기 */
     padding: 0 100px; /* 좌우에 200px 여백 추가 */
-    padding-top: 100px;
 }
 
 /* 사이드바 스타일 */
@@ -40,6 +39,7 @@ body {
     background: #f4f4f4;
     color: #333;
     width: 400px; /* 사이드바의 너비 */
+    padding-top: 100px;
     padding: 20px;
     box-sizing: border-box;
 }
