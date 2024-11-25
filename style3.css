@@ -74,10 +74,11 @@ body {
 
 /* 메인 콘텐츠 스타일 */
 .content {
+    height: 160px;
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: auto; /* 스크롤 가능하도록 설정 */
+    overflow-y: hidden
 }
 
 /* 게시글 스타일 (2열 그리드 설정) */
