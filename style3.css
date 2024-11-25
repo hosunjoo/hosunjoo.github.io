@@ -10,7 +10,7 @@ body {
 
 .site-name {
     padding: 0 110px; /* 좌우에 200px 여백 추가 */
-    width: 25%; /* 사이드바의 너비 */
+    width: 400px; /* 사이드바의 너비 */
     font-size: 24px; /* 글자 크기 설정 */
     font-weight: 600;
 }
