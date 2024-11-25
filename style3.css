@@ -76,7 +76,7 @@ body {
 .content {
     top: 0px
     flex: 1;
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
     overflow-y: auto;
 }
