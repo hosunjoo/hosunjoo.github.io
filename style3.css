@@ -84,7 +84,8 @@ body {
 .posts {
     display: grid; /* CSS Grid를 사용하여 2열 레이아웃을 만듭니다 */
     grid-template-columns: repeat(2, 1fr); /* 2열로 나열, 각 열의 너비를 동일하게 설정 */
-    gap: 20px; /* 각 카드 사이의 간격 */
+    gap: 20px;
+    overflow-y: auto;
 }
 
 .post {
